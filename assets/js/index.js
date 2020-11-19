@@ -67,7 +67,7 @@ const services = {
         [
             {
                 "price": 300,
-                "description": "<strong>/Muy grande<strong><br>2 o más pisos<br>3 o más habitaciones<br>Más de 300 m<br>$300 o más*"
+                "description": "<strong>Muy grande</strong><br>2 o más pisos<br>3 o más habitaciones<br>Más de 300 m<br>$300 o más*"
             }
         ],
 
