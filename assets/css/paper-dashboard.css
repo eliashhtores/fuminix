@@ -255,61 +255,22 @@ Copyright (c) 2015 Daniel Eden
   transition: all 150ms linear; }
   .btn:active, .btn.active,
   .show > .btn.dropdown-toggle,
-  /* .show > .btn.dropdown-toggle:focus, */
-  /* .show > .btn.dropdown-toggle:hover, */
-  /* .navbar .navbar-nav > a.btn:hover, */
-  /* .navbar .navbar-nav > a.btn:focus, */
   .navbar .navbar-nav > a.btn:active,
   .navbar .navbar-nav > a.btn.active,
-  /* .navbar .navbar-nav > a.btn:active:focus, */
   .navbar .navbar-nav >,
-  /* .navbar .navbar-nav:focus, */
-  /* .navbar .navbar-nav > a.btn.active:hover, */
   .show >
   .navbar .navbar-nav > a.btn.dropdown-toggle,
   .show >
-  /* .navbar .navbar-nav > a.btn.dropdown-toggle:focus, */
-  /* .show >
-  .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-    background-color: #403D39 !important;
-    color: #FFFFFF !important;
-    box-shadow: none !important; } */
-  /* .btn:not([data-action]):hover, */
-  /* .navbar .navbar-nav > a.btn:not([data-action]):hover {
-    box-shadow: none; } */
-  /* .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, */
-  /* fieldset[disabled] .btn,
-  fieldset[disabled] .btn:hover,
-  fieldset[disabled] .btn:focus,
-  fieldset[disabled] .btn.focus,
-  fieldset[disabled] .btn:active,
-  fieldset[disabled] .btn.active, */
-  /* .navbar .navbar-nav > a.btn.disabled,
-  .navbar .navbar-nav > a.btn.disabled:hover, */
-  /* .navbar .navbar-nav > a.btn.disabled:focus,
-  .navbar .navbar-nav > a.btn.disabled.focus, */
   .navbar .navbar-nav > a.btn.disabled:active,
   .navbar .navbar-nav > a.btn.disabled.active,
   .navbar .navbar-nav > a.btn:disabled,
-  /* .navbar .navbar-nav > a.btn:disabled:hover, */
-  /* .navbar .navbar-nav > a.btn:disabled:focus,
-  .navbar .navbar-nav > a.btn:disabled.focus, */
   .navbar .navbar-nav > a.btn:disabled:active,
   .navbar .navbar-nav > a.btn:disabled.active,
   .navbar .navbar-nav > a.btn[disabled],
-  /* .navbar .navbar-nav > a.btn[disabled]:hover, */
-  /* .navbar .navbar-nav > a.btn[disabled]:focus,
-  .navbar .navbar-nav > a.btn[disabled].focus, */
   .navbar .navbar-nav > a.btn[disabled]:active,
   .navbar .navbar-nav > a.btn[disabled].active,
   fieldset[disabled]
   .navbar .navbar-nav > a.btn,
-  /* fieldset[disabled]
-  .navbar .navbar-nav > a.btn:hover, */
-  /* fieldset[disabled]
-  .navbar .navbar-nav > a.btn:focus,
-  fieldset[disabled]
-  .navbar .navbar-nav > a.btn.focus, */
   fieldset[disabled]
   .navbar .navbar-nav > a.btn:active,
   fieldset[disabled]
@@ -320,9 +281,6 @@ Copyright (c) 2015 Daniel Eden
   .navbar .navbar-nav > a.btn.btn-simple {
     color: #66615B;
     border-color: #66615B; }
-    /* .btn.btn-simple:hover, .btn.btn-simple:focus, .btn.btn-simple:active, */
-    /* .navbar .navbar-nav > a.btn.btn-simple:hover, */
-    /* .navbar .navbar-nav > a.btn.btn-simple:focus, */
     .navbar .navbar-nav > a.btn.btn-simple:active {
       background-color: transparent;
       color: #403D39;
@@ -331,23 +289,12 @@ Copyright (c) 2015 Daniel Eden
   .btn.btn-link,
   .navbar .navbar-nav > a.btn.btn-link {
     color: #66615B; }
-    /* .btn.btn-link:hover, .btn.btn-link:focus, .btn.btn-link:active, .btn.btn-link:active:focus, */
-    /* .navbar .navbar-nav > a.btn.btn-link:hover, */
-    /* .navbar .navbar-nav > a.btn.btn-link:focus, */
     .navbar .navbar-nav > a.btn.btn-link:active
-    /* .navbar .navbar-nav > a.btn.btn-link:active:focus  */
     {
       background-color: transparent;
       color: #403D39;
       text-decoration: none;
       box-shadow: none; }
-  /* .btn:hover, .btn:focus, */
-  /* .navbar .navbar-nav > a.btn:hover */
-  /* .navbar .navbar-nav > a.btn:focus  */
-  /* {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    outline: 0 !important; } */
   .btn:active, .btn.active,
   .open > .btn.dropdown-toggle,
   .navbar .navbar-nav > a.btn:active,
