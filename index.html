@@ -38,113 +38,123 @@
           </div>
           <div class="card-body">
             <div class="container">
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="plague[]" id="smallRoaches">
-                    Cucarachas (Chicas) $599
+              <form id="form">
+                <div class="row" id="plagueRow">
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="plague[]" id="smallRoaches" value="599">
+                      Cucarachas (Chicas) $599
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-warning p-4" name="plague[]" id="bedBugs" value="599">
+                      Chinches de cama $599
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-warning p-4" name="plague[]" id="bigRoaches" value="499">
+                      Cucarachas (Grandes) $499
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="plague[]" id="various" value="499">
+                      Alacranes/Arañas/Hormigas $499
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-danger p-4" name="plague[]" id="flyingBugs" value="499">
+                      Insectos voladores $499
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-info p-4" name="plague[]" id="none" value="399">
+                      Ninguno, solo preventivo $399
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-center mb-4">
+                    <h1 class="d-inline-block mr-4"><i class="fa fa-plus mt-5 text-white"></i></h1>
+                    <button class="btn btn-warning p-4 text-dark disabled">
+                      ¿De qué tamaño es mi casa?
+                    </button>
+                  </div>
+                </div>
+                <div class="row" id="houseRow">
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="houseSize[]" id="smallHouse" value="0">
+                      Chica<br>1 piso<br>1-2 habitaciones<br>Menos de 60 m<br>$0*
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="houseSize[]" id="mediumHouse" value="100">
+                      Mediana<br>2 pisos<br>2-3 habitaciones<br>Menos de 80 m<br>$100*
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="houseSize[]" id="bigHouse" value="200">
+                      Grande<br>2 pisos<br>3-4 habitaciones<br>Menos de 300 m<br>$200*
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="houseSize[]" id="veryBigHouse" value="300">
+                      Muy grande<br>2 o más pisos<br>3 o más habitaciones<br>Más de 300 m<br>$300
+                      o más*
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-center mb-4">
+                    <h1 class="d-inline-block mr-4"><i class="fa fa-plus mt-5 text-white"></i></h1>
+                    <button class="btn btn-warning p-4 text-dark disabled">
+                      ¿A qué distancia se encuentra mi casa del centro de la ciudad?
+                    </button>
+                  </div>
+                </div>
+                <div class="row" id="distanceRow">
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="distance[]" id="veryClose" value="0">
+                      Muy cerca<br>Menos de 3 km<br>$0
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="distance[]" id="close" value="50">
+                      Cerca<br>Menos de 7 km<br>$50
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="distance[]" id="far" value="100">
+                      Lejos<br>Menos de 15 km<br>$100
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary p-4" name="distance[]" id="veryFar" value="150">
+                      Muy lejos<br>En las afueras o en otra ciudad<br>$150 o más**
+                    </button>
+                  </div>
+                </div>
+                <div class="text-center text-white lead d-none" id="description"><strong>Descripción del
+                    servicio:</strong>
+                </div>
+                <p class="text-white text-center d-none" id="plague"></p>
+                <br>
+                <p class="text-white text-center d-none" id="houseSize"></p>
+                <br>
+                <p class="text-white text-center d-none" id="distance"></p>
+                <p class="text-center text-white lead d-none" id="totalParagraph"><strong>Total: $<span
+                      id="total"></span> o más</strong></p>
+                <div class="text-center">
+                  <button class="btn btn-outline-primary p-4" id="quote">
+                    <i class="fa fa-dollar"></i> Cotizar
                   </button>
                 </div>
-                <div class="col">
-                  <button class="btn btn-warning p-4" name="plague[]" id="bedBugs">
-                    Chinches de cama $599
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-warning p-4" name="plague[]" id="bigRoaches">
-                    Cucarachas (Grandes) $499
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="plague[]" id="various">
-                    Alacranes/Arañas/Hormigas $499
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-danger p-4" name="plague[]" id="flyingBugs">
-                    Insectos voladores $499
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-info p-4" name="plague[]" id="none">
-                    Ninguno, solo preventivo $399
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center mb-4">
-                  <h1 class="d-inline-block mr-4"><i class="fa fa-plus mt-5 text-white"></i></h1>
-                  <button class="btn btn-warning p-4 text-dark disabled">
-                    ¿De qué tamaño es mi casa?
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="houseSize[]" id="smallHouse">
-                    Chica<br>1 piso<br>1-2 habitaciones<br>Menos de 60 m<br>$0*
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="houseSize[]" id="mediumHouse">
-                    Mediana<br>2 pisos<br>2-3 habitaciones<br>Menos de 80 m<br>$100*
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="houseSize[]" id="bigHouse">
-                    Grande<br>2 pisos<br>3-4 habitaciones<br>Menos de 300 m<br>$200*
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="houseSize[]" id="veryBigHouse">
-                    Muy grande<br>2 o más pisos<br>3 o más habitaciones<br>Más de 300 m<br>$300
-                    o más*
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center mb-4">
-                  <h1 class="d-inline-block mr-4"><i class="fa fa-plus mt-5 text-white"></i></h1>
-                  <button class="btn btn-warning p-4 text-dark disabled">
-                    ¿A qué distancia se encuentra mi casa del centro de la ciudad?
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="distance[]" id="veryClose">
-                    Muy cerca<br>Menos de 3 km<br>$0
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="distance[]" id="close">
-                    Cerca<br>Menos de 7 km<br>$50
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="distance[]" id="far">
-                    Lejos<br>Menos de 15 km<br>$100
-                  </button>
-                </div>
-                <div class="col">
-                  <button class="btn btn-primary p-4" name="distance[]" id="veryFar">
-                    Muy lejos<br>En las afueras o en otra ciudad<br>$150 o más**
-                  </button>
-                </div>
-              </div>
-              <p class="text-center text-white lead"><strong>Descripción del servicio:</strong></p>
-              <h5 class="text-white text-center" id="plague"></h5>
-              <br>
-              <h5 class="text-white text-center" id="houseSize"></h5>
-              <br>
-              <h5 class="text-white text-center" id="distance"></h5>
-              <p class="text-center text-white lead"><strong>Total: $<span id="total"></span></strong></p>
-              <p class="text-white">*El precio del servicio podría variar dependiendo de las plagas a tratar. Por
-                ejemplo, en caso de existir una probleática de chinche de cama y cucaracha chica, el precio podría
-                aumentar hasta un 20%</p>
-              <p class="text-white">** El cargo de distancia podría variar en función de la distancia a recorrer para
-                realizar el servicio, en este caso no hay un estipado ya que se nos permite trabajar hasta 250 km a
-                la redonda de cada sucursal.</p>
+                <p class="text-white">*El precio del servicio podría variar dependiendo de las plagas a tratar. Por
+                  ejemplo, en caso de existir una probleática de chinche de cama y cucaracha chica, el precio podría
+                  aumentar hasta un 20%</p>
+                <p class="text-white">** El cargo de distancia podría variar en función de la distancia a recorrer para
+                  realizar el servicio, en este caso no hay un estipado ya que se nos permite trabajar hasta 250 km a
+                  la redonda de cada sucursal.</p>
             </div>
+            </form>
           </div>
         </div>
       </div>
