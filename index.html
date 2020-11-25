@@ -1,174 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Guía de precios para servicio de fumigación
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-    name='viewport' />
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <!-- CSS Files -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Fuminix</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
 </head>
 
-<body class="">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-primary">
-    <a class="navbar-brand text-dark"><strong>Guía de precios para servicio de fumigación</strong></a>
-  </nav>
-  <!-- End Navbar -->
+<body>
 
-  <br>
+    <!--====== PRELOADER PART START ======-->
 
-  <div class="content mt-4">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card bg-dark">
-          <div class="card-header">
-            <h4 class="card-title text-center"><button class="btn btn-warning p-2 text-dark disabled"><i
-                  class="fa fa-bug"></i> ¿Qué plaga tengo?</button>
-            </h4>
-          </div>
-          <div class="card-body">
-            <div class="container">
-              <form id="form">
-                <div class="row" id="plagueRow">
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="plague[]" id="smallRoaches" value="599">
-                      Cucarachas (Chicas) $599
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-warning p-4" name="plague[]" id="bedBugs" value="599">
-                      Chinches de cama $599
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-warning p-4" name="plague[]" id="bigRoaches" value="499">
-                      Cucarachas (Grandes) $499
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="plague[]" id="various" value="499">
-                      Alacranes/Arañas/Hormigas $499
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-danger p-4" name="plague[]" id="flyingBugs" value="499">
-                      Insectos voladores $499
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-info p-4" name="plague[]" id="none" value="399">
-                      Ninguno, solo preventivo $399
-                    </button>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col text-center mb-4">
-                    <h1 class="d-inline-block mr-4"><i class="fa fa-plus mt-5 text-white"></i></h1>
-                    <button class="btn btn-warning p-2 text-dark disabled">
-                      <h4 class="font-weight-bold">
-                        <i class="fa fa-home"></i> ¿De qué tamaño es mi casa?
-                      </h4>
-                    </button>
-                  </div>
-                </div>
-                <div class="row" id="houseRow">
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="houseSize[]" id="smallHouse" value="0">
-                      Chica<br>1 piso<br>1-2 habitaciones<br>Menos de 60 m2<br>$0*
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="houseSize[]" id="mediumHouse" value="100">
-                      Mediana<br>2 pisos<br>2-3 habitaciones<br>Menos de 80 m2<br>$100*
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="houseSize[]" id="bigHouse" value="200">
-                      Grande<br>2 pisos<br>3-4 habitaciones<br>Menos de 300 m2<br>$200*
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="houseSize[]" id="veryBigHouse" value="300">
-                      Muy grande<br>2 o más pisos<br>3 o más habitaciones<br>Más de 300 m2<br>$300
-                      o más*
-                    </button>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col text-center mb-4">
-                    <h1 class="d-inline-block mr-4"><i class="fa fa-plus mt-5 text-white"></i></h1>
-                    <button class="btn btn-warning p-2 text-dark disabled">
-                      <h4 class="font-weight-bold">
-                        <i class="fa fa-road"></i> ¿A qué distancia se encuentra <br> mi casa del centro de la ciudad?
-                      </h4>
-                    </button>
-                  </div>
-                </div>
-                <div class="row" id="distanceRow">
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="distance[]" id="veryClose" value="0">
-                      Muy cerca<br>Menos de 3 km<br>$0
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="distance[]" id="close" value="50">
-                      Cerca<br>Menos de 7 km<br>$50
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="distance[]" id="far" value="100">
-                      Lejos<br>Menos de 15 km<br>$100
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button class="btn btn-primary p-4" name="distance[]" id="veryFar" value="150">
-                      Muy lejos<br>En las afueras o en otra ciudad<br>$150 o más**
-                    </button>
-                  </div>
-                </div>
-                <div class="text-center text-white lead d-none" id="description"><strong>Descripción del
-                    servicio:</strong>
-                </div>
-                <p class="text-white text-center d-none" id="plague"></p>
-                <br>
-                <p class="text-white text-center d-none" id="houseSize"></p>
-                <br>
-                <p class="text-white text-center d-none" id="distance"></p>
-                <p class="text-center text-white lead d-none" id="totalParagraph"><strong>Total: $<span
-                      id="total"></span> o más</strong></p>
-                <div class="text-center">
-                  <button class="btn btn-outline-primary p-4" id="quote">
-                    <i class="fa fa-dollar"></i> Cotizar
-                  </button>
-                </div>
-                <p class="text-white">*El precio del servicio podría variar dependiendo de las plagas a tratar. Por
-                  ejemplo, en caso de existir una probleática de chinche de cama y cucaracha chica, el precio podría
-                  aumentar hasta un 20%</p>
-                <p class="text-white">** El cargo de distancia podría variar en función de la distancia a recorrer para
-                  realizar el servicio, en este caso no hay un estipado ya que se nos permite trabajar hasta 250 km a
-                  la redonda de cada sucursal.</p>
-            </div>
-            </form>
-          </div>
+    <div class="preloader">
+        <div class="spin">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
         </div>
-      </div>
     </div>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="assets/js/core/jquery.min.js"></script>
-  <script src="assets/js/index.js"></script>
-  <script src="assets/js/core/popper.min.js"></script>
-  <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="bar-icon"></span>
+                            <span class="bar-icon"></span>
+                            <span class="bar-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a data-scroll-nav="0" href="#home">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll-nav="0" href="#services">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-scroll-nav="0" href="quote/index.html">Cotizar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== SLIDER PART START ======-->
+
+    <section id="home" class="slider-area pt-100">
+        <div class="container-fluid position-relative">
+            <div class="slider-active">
+                <div class="single-slider">
+                    <div class="slider-bg">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="slider-product-image d-md-block">
+                                    <img src="assets/images/slider/1.jpg" alt="Slider">
+                                    <div class="slider-discount-tag d-none d-md-block">
+                                        <p>COTIZAR<br> GRATIS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="slider-product-content">
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s">
+                                        <span>Obtenga</span> una cotización <span>gratis</span></h1>
+                                    <!-- <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small
+                                        line of blind text by the name of Lorem Ipsum <br> decided to leave for the far
+                                        World of Grammar.</p> -->
+                                    <br>
+                                    <a class="main-btn" href="quote/index.html" data-animation="fadeInUp"
+                                        data-delay="1.5s">Cotizar <i class="lni-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider">
+                    <div class="slider-bg">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="slider-product-image d-md-block">
+                                    <img src="assets/images/slider/3.jpg" alt="Slider">
+                                    <div class="slider-discount-tag d-none d-md-block">
+                                        <p>Control de</span> roedores</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="slider-product-content">
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s">
+                                        <span>Control de</span> plagas de <span>roedores</span></h1>
+                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">Le ayudamos a controlar
+                                        y eliminar plagas de roedores por medio de métodos tradicionales como estaciones
+                                        para roedor, o trampas mecánicas y de pegamento.</p>
+                                    <a class="main-btn" href="quote/index.html" data-animation="fadeInUp"
+                                        data-delay="1.5s">Cotizar <i class="lni-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider">
+                    <div class="slider-bg">
+                        <div class="row no-gutters align-items-center ">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="slider-product-image d-md-block">
+                                    <img src="assets/images/slider/2.jpg" alt="Slider">
+                                    <div class="slider-discount-tag d-none d-md-block">
+                                        <p>PRODUCTOS DE USO <br> URBANO</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="slider-product-content">
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s">
+                                        <span>Productos</span> de uso urbano y<span> doméstico</span></h1>
+                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">En FUMINIX utilizamos
+                                        productos adecuados para su uso urbano y doméstico pero totalmente IMPLACABLES
+                                        con los insectos.</p>
+                                    <a class="main-btn" href="quote/index.html" data-animation="fadeInUp"
+                                        data-delay="1.5s">Cotizar <i class="lni-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-social">
+                <div class="row justify-content-end">
+                    <div class="col-lg-7 col-md-6">
+                        <ul class="social text-right">
+                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                            <li><a href="#"><i class="lni-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== SLIDER PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+
+    <section id="services" class="showcase-area pt-100 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="showcase-title pt-25">
+                        <h2 class="title">Servicios</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="showcase-title pt-25">
+                        <p>Deslice para obtener más información sobre más los servicios que ofrecemos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="showcase-active mt-65">
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-2.jpg" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="content-title mb-15 text-white">¡Puede estar seguro que nuestro personal está
+                                    capacitado <br> para utilizar el método de aplicación más eficiente <br> dependiendo
+                                    de cada caso y plaga para garantizar siempre excelentes resultados!
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-1.jpg" alt="Termonebulización">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="content-title mb-15">Contamos con servicio de TERMONEBULIZACIÓN para
+                                    casos delicados <br> con altas infestaciones de insectos o lugares de difícil
+                                    acceso.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-3.jpg" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="content-title mb-15">El control de plagas en ambientes siempre
+                                    será un buen aliado <br> para contrarrestar infestaciones de voladores y rastreros.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-4.jpg" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="content-title mb-15 text-white">En FUMINIX conocemos bien el actuar de los
+                                    insectos y gracias <br> a ello tenemos la certeza de poder controlar <br>
+                                    prácticamente cualquier problema de plaga <br> para que usted no tenga que lidiar
+                                    con este problema.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-5.jpg" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="content-title mb-15">Le ofrecemos servicio integral MIP para su
+                                    restaurante. <br> Únicamente con productos de grado alimenticio. <br> Contamos con
+                                    licencia sanitaria para poder ofrecerle certificación en su servicio.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-6.jpg" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="content-title mb-15">¡En ocasiones podemos tener en casa problemas <br>
+                                    más graves de lo que pensamos sin darnos cuenta! <br> Puede estar segudo de que
+                                    tenemos la experiencia para detectarlos.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-7.jpg" alt="">
+                            </div>
+                            <!-- <div class="product-content">
+                                <h4 class="content-title mb-15">¡En ocasiones podemos tener en casa problemas <br>
+                                    más graves de lo que pensamos sin darnos cuenta! <br> Puede estar segudo de que
+                                    tenemos la experiencia para detectarlos.
+                                </h4>
+                            </div> -->
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-8.jpg" alt="">
+                            </div>
+                            <!-- <div class="product-content">
+                                <h4 class="content-title mb-15">¡En ocasiones podemos tener en casa problemas <br>
+                                    más graves de lo que pensamos sin darnos cuenta! <br> Puede estar segudo de que
+                                    tenemos la experiencia para detectarlos.
+                                </h4>
+                            </div> -->
+                        </div>
+                        <div class="single-discount-product mt-30">
+                            <div class="product-image">
+                                <img src="assets/images/showcase/service-9.jpg" alt="">
+                            </div>
+                            <!-- <div class="product-content">
+                                <h4 class="content-title mb-15">¡En ocasiones podemos tener en casa problemas <br>
+                                    más graves de lo que pensamos sin darnos cuenta! <br> Puede estar segudo de que
+                                    tenemos la experiencia para detectarlos.
+                                </h4>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== SHOWCASE PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <section id="footer" class="footer-area">
+        <div class="container">
+            <div class="footer-widget pt-75 pb-120">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="footer-logo mt-40">
+                            <a href="#">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <!-- <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat
+                                ipsutis sem nibh id elit.</p> -->
+                            <ul class="footer-social mt-25">
+                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-5">
+                        <div class="footer-link mt-50">
+                            <h5 class="f-title">Services</h5>
+                            <ul>
+                                <li><a href="#">Architechture Design</a></li>
+                                <li><a href="#">Interior Design</a></li>
+                                <li><a href="#">Autocad Services</a></li>
+                                <li><a href="#">Lighting Design</a></li>
+                                <li><a href="#">Poster Design</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-5">
+                        <div class="footer-link mt-50">
+                            <h5 class="f-title">Help</h5>
+                            <ul>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div> 
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-5 col-sm-7">
+                        <div class="footer-info mt-50">
+                            <h5 class="f-title">Contact Info</h5>
+                            <ul>
+                                <li>
+                                    <div class="single-footer-info mt-20">
+                                        <span>Phone :</span>
+                                        <div class="footer-info-content">
+                                            <p>+88123 4567 890</p>
+                                            <p>+88123 4567 890</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-footer-info mt-20">
+                                        <span>Email :</span>
+                                        <div class="footer-info-content">
+                                            <p>contact@yourmail.com</p>
+                                            <p>support@yourmail.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-footer-info mt-20">
+                                        <span>Address :</span>
+                                        <div class="footer-info-content">
+                                            <p>5078 Jensen Key, Port Kaya, WV 73505</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer-copyright pt-15 pb-15">
+                <!-- <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright text-center">
+                            <p>Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TO TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TO TOP PART ENDS ======-->
+
+
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+    <!--====== nav js ======-->
+    <script src="assets/js/jquery.nav.js"></script>
+
+    <!--====== Nice Number js ======-->
+    <script src="assets/js/jquery.nice-number.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
