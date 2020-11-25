@@ -1,15 +1,15 @@
 /*!
 
- =========================================================
+=========================================================
  * Paper Dashboard 2 - v2.0.1
- =========================================================
+=========================================================
 
  * Product Page: https://www.creative-tim.com/product/paper-dashboard-2
  * Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
  * Coded by www.creative-tim.com
 
- =========================================================
+=========================================================
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -402,18 +402,14 @@ Copyright (c) 2015 Daniel Eden
 .btn-warning {
   background-color: #fbc658;
   color: #FFFFFF; }
-  .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning:active:focus, .btn-warning:active:hover, .btn-warning.active:focus, .btn-warning.active:hover,
+  btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning:active:focus, .btn-warning.active:focus, 
   .show > .btn-warning.dropdown-toggle,
-  .show > .btn-warning.dropdown-toggle:focus,
-  .show > .btn-warning.dropdown-toggle:hover {
+  .show > .btn-warning.dropdown-toggle:focus{
     background-color: #faaa86 !important;
     color: #FFFFFF !important;
     box-shadow: none !important; }
-  .btn-warning:not([data-action]):hover {
-    box-shadow: none; }
-  .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning:disabled, .btn-warning:disabled:hover, .btn-warning:disabled:focus, .btn-warning:disabled.focus, .btn-warning:disabled:active, .btn-warning:disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active,
+  .btn-warning.disabled .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning:disabled, .btn-warning:disabled:focus, .btn-warning:disabled.focus, .btn-warning:disabled:active, .btn-warning:disabled.active, .btn-warning[disabled], .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active,
   fieldset[disabled] .btn-warning,
-  fieldset[disabled] .btn-warning:hover,
   fieldset[disabled] .btn-warning:focus,
   fieldset[disabled] .btn-warning.focus,
   fieldset[disabled] .btn-warning:active,
