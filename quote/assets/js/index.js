@@ -48,9 +48,7 @@ document.querySelectorAll('.btn').forEach(item => {
 document.querySelector('#quote').addEventListener('click', (e) => {
     let accumulator = 0;
 
-    plague.innerText = '';
-    houseSize.innerText = '';
-    distance.innerText = '';
+    cleanTotals();
 
     Array.from(form.elements).forEach((element) => {
         if (element.classList.contains('active') && element.hasAttribute('value')) {
@@ -66,9 +64,7 @@ document.querySelector('#quote').addEventListener('click', (e) => {
 
     if (accumulator === 0 || plague.innerHTML === '' || houseSize.innerText === '' || distance.innerText === '') {
         displayModal('Favor de seleccionar el tipo de plaga, el tamaño de su casa y la distancia');
-        plague.innerText = '';
-        houseSize.innerText = '';
-        distance.innerText = '';
+        cleanTotals();
         totalParagraph.classList.add('d-none');
     } else {
         total.innerText = accumulator;
@@ -85,4 +81,10 @@ document.querySelector('#quote').addEventListener('click', (e) => {
 function displayModal(message) {
     document.querySelector('#textMessage').innerHTML = message;
     $('#messagesModal').modal('show');
+}
+
+function cleanTotals() {
+    plague.innerText = '';
+    houseSize.innerText = '';
+    distance.innerText = '';
 }
