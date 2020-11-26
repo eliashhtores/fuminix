@@ -49,6 +49,9 @@ document.querySelector('#quote').addEventListener('click', (e) => {
     let accumulator = 0;
 
     plague.innerText = '';
+    houseSize.innerText = '';
+    distance.innerText = '';
+
     Array.from(form.elements).forEach((element) => {
         if (element.classList.contains('active') && element.hasAttribute('value')) {
             accumulator += parseInt(element.value);
@@ -61,12 +64,25 @@ document.querySelector('#quote').addEventListener('click', (e) => {
         }
     });
 
-    total.innerText = accumulator;
-    plague.classList.remove('d-none');
-    houseSize.classList.remove('d-none');
-    distance.classList.remove('d-none');
-    totalParagraph.classList.remove('d-none');
-    description.classList.remove('d-none');
+    if (accumulator === 0 || plague.innerHTML === '' || houseSize.innerText === '' || distance.innerText === '') {
+        displayModal('Favor de seleccionar el tipo de plaga, el tamaño de su casa y la distancia');
+        plague.innerText = '';
+        houseSize.innerText = '';
+        distance.innerText = '';
+        totalParagraph.classList.add('d-none');
+    } else {
+        total.innerText = accumulator;
+        plague.classList.remove('d-none');
+        houseSize.classList.remove('d-none');
+        distance.classList.remove('d-none');
+        totalParagraph.classList.remove('d-none');
+        description.classList.remove('d-none');
+    }
 
     e.preventDefault();
 });
+
+function displayModal(message) {
+    document.querySelector('#textMessage').innerHTML = message;
+    $('#messagesModal').modal('show');
+}
